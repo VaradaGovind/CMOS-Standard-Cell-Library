@@ -1,2 +1,39 @@
-# Auto detect text files and perform LF normalization
+# Auto-detect text files and perform LF/CRLF normalization
 * text=auto
+
+# Schematics and Symbols
+# We treat these as text so you can see diffs if you change a wire or value.
+*.asc text
+*.asy text
+
+# Netlists, Models, and Libraries
+# These are code-like text files.
+*.net text
+*.cir text
+*.lib text
+*.sub text
+*.mod text
+
+# Plot Settings
+# Stores your waveform color/window settings.
+*.plt text
+
+# ------------------------------------------------------------------
+# Binary Files (Do not attempt to diff these as text)
+# ------------------------------------------------------------------
+
+# Simulation Output
+# (Ideally, these should be in .gitignore, but this is a safety net)
+*.raw binary
+*.fft binary
+*.vcd binary
+
+# Documentation & Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+
+# Archive files
+*.zip binary
