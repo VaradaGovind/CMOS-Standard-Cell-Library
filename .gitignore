@@ -1,0 +1,8 @@
+# Ignore simulation logs
+*.log
+# Ignore massive waveform files (Can be GBs in size)
+*.raw
+*.fft
+# Ignore backup files created by LTspice
+*.bak
+*.net
